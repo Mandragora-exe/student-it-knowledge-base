@@ -1,6 +1,6 @@
 # Git - Ściąga
 
-## Podstawowe polecenia
+# Podstawowe polecenia
 
 | Polecenie | Przykład użycia | Co opisać |
 |---|---|---|
