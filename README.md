@@ -14,10 +14,14 @@ Studentki Lena i Kaja
 ## Zawartość repozytorium
 
 ```text
-.
 ├── README.md
-├── bash-cheatsheet
-└── git.md
+└── docs/
+    ├── prg1/
+    │   └── dotnet-cli.md
+    ├── ukos/
+    │   └── bash.md
+    └── warp/
+        └── git.md
 ```
 
 ## Materiały
