@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student IT Knowledge Base - .NET CLI</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Student IT Knowledge Base</h1>
+  </header>
+  <nav>
+    <a href="../index.html">Strona główna</a> |
+    <a href="git.html">Git</a> |
+    <a href="dotnet-cli.html">.NET CLI</a> |
+  </nav>
+
+  <main>
+    <h2>Interfejs wiersza poleceń .NET CLI</h2>
+    <p class="info-note">
+        Interfejs wiersza poleceń (CLI) platformy .NET to wieloplatformowy produkt deweloperski służący do tworzenia, kompilowania, uruchamiania i publikowania aplikacji .NET.
+    </p>
+
+    <h3>Sekwencja utworzenia i uruchomienia aplikacji</h3>
+    <pre><code># 1. Sprawdzenie zainstalowanej wersji i SDKs
+dotnet --version
+dotnet --list-sdks
+
+# 2. Wyświetlenie dostępnych szablonów projektów
+dotnet new list
+
+# 3. Utworzenie nowej aplikacji konsolowej
+dotnet new console -o MojaAplikacja
+cd MojaAplikacja
+
+# 4. Przywrócenie zależności (pakietów NuGet)
+dotnet restore
+
+# 5. Kompilacja projektu
+dotnet build
+
+# 6. Uruchomienie aplikacji
+dotnet run
+
+# 7. Czyszczenie danych wyjściowych kompilacji
+dotnet clean</code></pre>
+
+    <div class="table-scroll">
+        <table class="command-table">
+            <caption>Podstawowe polecenia .NET CLI</caption>
+            <thead>
+                <tr>
+                    <th>Polecenie</th>
+                    <th>Przykład</th>
+                    <th>Opis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>dotnet --version</code></td>
+                    <td><code>dotnet --version</code></td>
+                    <td>Wyświetla aktualnie używaną wersję narzędzi .NET CLI</td>
+                </tr>
+                <tr>
+                    <td><code>dotnet --list-sdks</code></td>
+                    <td><code>dotnet --list-sdks</code></td>
+                    <td>Wylistowuje wszystkie zainstalowane wersje zestawów SDK platformy .NET</td>
+                </tr>
+                <tr>
+                    <td><code>dotnet new list</code></td>
+                    <td><code>dotnet new list</code></td>
+                    <td>Wyświetla listę dostępnych szablonów do utworzenia nowego projektu</td>
+                </tr>
+                <tr>
+                    <td><code>dotnet new</code></td>
+                    <td><code>dotnet new console</code></td>
+                    <td>Inicjalizuje nowy projekt na podstawie wybranego szablonu</td>
+                </tr>
+                <tr>
+                    <td><code>dotnet restore</code></td>
+                    <td><code>dotnet restore</code></td>
+                    <td>Przywraca zależności i narzędzia specyficzne dla danego projektu</td>
+                </tr>
+                <tr>
+                    <td><code>dotnet build</code></td>
+                    <td><code>dotnet build</code></td>
+                    <td>Kompiluje projekt i wszystkie jego zależności do plików wykonywalnych</td>
+                </tr>
+                <tr>
+                    <td><code>dotnet run</code></td>
+                    <td><code>dotnet run</code></td>
+                    <td>Uruchamia kod źródłowy bez konieczności jawnego wywoływania build</td>
+                </tr>
+                <tr>
+                    <td><code>dotnet clean</code></td>
+                    <td><code>dotnet clean</code></td>
+                    <td>Czyszczenie katalogów wyjściowych z plików powstałych podczas kompilacji</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Dokumentacja</h3>
+    <p>
+        <a href="../docs/prg1/dotnet-cli.md">Oryginalny plik Markdown</a> |
+        <a href="https://microsoft.com" target="_blank" rel="noopener noreferrer">Oficjalna dokumentacja .NET CLI</a>
+    </p>
+  </main>
+  
+  <footer>
+    <p>Materiały edukacyjne</p>
+  </footer>
+</body>
+</html>
