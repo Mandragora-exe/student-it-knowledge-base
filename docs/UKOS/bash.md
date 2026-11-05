@@ -28,5 +28,4 @@ git status
 | `rm` | `rm archive.md` | **Usuwa plik.**<br>*Ostrzeżenie:* Ta operacja trwale usuwa plik i omija kosz systemowy. |
 | `cat` | `cat bash.md` | Wyświetla całą zawartość wskazanego pliku bezpośrednio w oknie terminala. |
 | `clear` | `clear` | Czyści bieżący widok ekranu terminala. Nie usuwa historii wpisywanych wcześniej poleceń. |
-
 | `rm` | `rm` | Usuwa pliki bez kosza. |
