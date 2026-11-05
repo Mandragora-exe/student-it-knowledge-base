@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student IT Knowledge Base - Git</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <h1>Student IT Knowledge Base</h1>
+  </header>
+  <nav>
+    <a href="../index.html">Strona główna</a> |
+    <a href="git.html">Git</a> |
+    <a href="dotnet-cli.html">.NET CLI</a> |
+  </nav>
+
+  <main>
+    <h2>Kontrola wersji Git</h2>
+    <p class="info-note">
+        Git to rozproszony system kontroli wersji, który pozwala zespołom deweloperskim na efektywne zarządzanie kodem źródłowym, śledzenie historii zmian oraz jednoczesną pracę nad wieloma funkcjonalnościami.
+    </p>
+
+    <h3>Procedura pracy (Workflow)</h3>
+    <ol>
+        <li><strong>Synchronizacja:</strong> Pobierz najnowsze zmiany z repozytorium zdalnego (<code>git pull</code> / <code>git fetch</code>).</li>
+        <li><strong>Branch:</strong> Utwórz nową gałąź dedykowaną dla zadania, nad którym będziesz pracować (<code>git branch</code> / <code>git switch</code>).</li>
+        <li><strong>Zmiana:</strong> Wprowadź modyfikacje w plikach projektu w swoim katalogu roboczym.</li>
+        <li><strong>Commit:</strong> Dodaj pliki do przechowalni i zapisz zmiany w lokalnej historii (<code>git add</code>, <code>git commit</code>).</li>
+        <li><strong>Push:</strong> Wyślij swoją lokalną gałąź wraz z commitami na serwer zdalny (<code>git push</code>).</li>
+        <li><strong>PR (Pull Request):</strong> Otwórz Pull Request w celu przejrzenia kodu przez zespół i scalenia go z główną gałęzią.</li>
+    </ol>
+
+    <div class="table-scroll">
+        <table class="command-table">
+            <caption>Kluczowe polecenia Git</caption>
+            <thead>
+                <tr>
+                    <th>Polecenie</th>
+                    <th>Przykład</th>
+                    <th>Opis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>git clone</code></td>
+                    <td><code>git clone https://github.com...</code></td>
+                    <td>Klonuje istniejące zdalne repozytorium do nowego katalogu lokalnego</td>
+                </tr>
+                <tr>
+                    <td><code>git status</code></td>
+                    <td><code>git status</code></td>
+                    <td>Wyświetla stan plików w katalogu roboczym i przechowalni (staged)</td>
+                </tr>
+                <tr>
+                    <td><code>git add</code></td>
+                    <td><code>git add .</code></td>
+                    <td>Dodaje zmiany z katalogu roboczego do przechowalni (index)</td>
+                </tr>
+                <tr>
+                    <td><code>git commit</code></td>
+                    <td><code>git commit -m "feat: init"</code></td>
+                    <td>Zapisuje zawartość przechowalni jako nową migawkę w historii repozytorium</td>
+                </tr>
+                <tr>
+                    <td><code>git push</code></td>
+                    <td><code>git push origin main</code></td>
+                    <td>Wysyła lokalne commity na serwer zdalny</td>
+                </tr>
+                <tr>
+                    <td><code>git fetch</code></td>
+                    <td><code>git fetch origin</code></td>
+                    <td>Pobiera informacje o nowych zmianach ze zdalnego repozytorium, ale ich nie scala</td>
+                </tr>
+                <tr>
+                    <td><code>git pull</code></td>
+                    <td><code>git pull origin main</code></td>
+                    <td>Pobiera zmiany ze zdalnego repozytorium i natychmidst scala je z bieżącą gałęzią</td>
+                </tr>
+                <tr>
+                    <td><code>git branch</code></td>
+                    <td><code>git branch feature-login</code></td>
+                    <td>Wyświetla listę gałęzi, tworzy nową gałąź lub usuwa istniejącą</td>
+                </tr>
+                <tr>
+                    <td><code>git switch</code></td>
+                    <td><code>git switch feature-login</code></td>
+                    <td>Przełącza kontekst pracy na inną, wskazaną gałąź</td>
+                </tr>
+                <tr>
+                    <td><code>git log</code></td>
+                    <td><code>git log --oneline</code></td>
+                    <td>Wyświetla historię zatwierdzonych commitów w bieżącej gałęzi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Dokumentacja</h3>
+    <p>
+        <a href="../docs/warp/git.md">Oryginalny plik Markdown</a> |
+        <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer">Oficjalna dokumentacja Git</a>
+    </p>
+  </main>
+  
+  <footer>
+    <p>Materiały edukacyjne</p>
+  </footer>
+</body>
+</html>
